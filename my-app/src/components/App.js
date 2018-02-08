@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
+import * as action from '../actions';
 
 class App extends Component {
   render() {
@@ -21,7 +22,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  return state;
+  return { ...state };
 };
 
 export default connect(mapStateToProps)(App);

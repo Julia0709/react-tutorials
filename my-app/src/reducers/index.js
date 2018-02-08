@@ -8,47 +8,8 @@ const app = (state = initState, action) => {
         ...action.params,
       };
   }
+  console.log(state);
   return state;
 };
 
 export default app;
-
-{
-    task: 'task2',
-}
-
-// {
-//     state: state,
-//     action.params: action.params,
-// }
-// state = { a: 1 }
-// { state }
-// { state: state }
-// {
-//     state: {
-//         a: 1
-//     }
-// }
-
-// { ...state }
-// {
-//     a: 1
-// }
-
-// { ...action.params }
-// {
-//     task:'task1'
-// }
-
-// {
-//     ...state,
-//     ...action.params
-// }
-// {
-//     a: 1,
-//     task: 'task1',
-// }
-
-// {
-//     task: 'task1',
-// }
