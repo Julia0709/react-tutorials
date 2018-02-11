@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from './logo.svg';
 import './App.css';
-import * as action from '../actions';
+// import * as action from '../actions';
 
 class App extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div>
+        <header>
+          <h1>My todo list</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <form>
+          <label>
+            Add new task:
+            <input type="text" name="task" />
+          </label>
+          <input type="submit" value="Add" onClick />
+        </form>
       </div>
     );
   }

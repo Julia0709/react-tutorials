@@ -7,6 +7,9 @@ const app = (state = initState, action) => {
         ...state,
         ...action.params,
       };
+      break;
+    default:
+      break;
   }
   console.log(state);
   return state;
